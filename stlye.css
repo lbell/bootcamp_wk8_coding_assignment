@@ -1,0 +1,109 @@
+/* element selector */
+body {
+  background-color: rgb(237, 237, 240);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  border-bottom: 2px solid grey;
+}
+
+h2 {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+form {
+  border: 2px solid grey;
+  padding: 10px;
+  width: 25%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr {
+  background-color: white;
+}
+
+td {
+  font-family: monospace;
+}
+
+/* nested selector */
+header a {
+  border: 3px solid;
+  padding: 2px;
+  margin: 2px;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+/* class selectors */
+.table-heading {
+  color: green;
+}
+
+.info {
+  color: grey;
+  text-transform: uppercase;
+}
+
+.button,
+nav a {
+  text-transform: uppercase;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover,
+nav a:hover {
+  background-color: orange;
+}
+
+.thumb {
+  width: 250px;
+  height: 250px;
+  margin: 0 5px 0 0;
+}
+
+/* ID Selectors */
+#main-title {
+  color: blue;
+}
+
+#plague-title {
+  color: teal;
+}
+#monarch-title {
+  color: gold;
+}
